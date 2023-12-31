@@ -13,6 +13,11 @@
 		E1522CB92B0C2C18009D14A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1522CB72B0C2C18009D14A3 /* Main.storyboard */; };
 		E1522CBB2B0C2C1A009D14A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1522CBA2B0C2C1A009D14A3 /* Assets.xcassets */; };
 		E1522CBE2B0C2C1A009D14A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1522CBC2B0C2C1A009D14A3 /* LaunchScreen.storyboard */; };
+		E1522CCA2B0C3182009D14A3 /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E1522CC62B0C3182009D14A3 /* song1.mp3 */; };
+		E1522CCB2B0C3182009D14A3 /* song3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E1522CC72B0C3182009D14A3 /* song3.mp3 */; };
+		E1522CCC2B0C3182009D14A3 /* song2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E1522CC82B0C3182009D14A3 /* song2.mp3 */; };
+		E1522CCD2B0C3182009D14A3 /* song4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E1522CC92B0C3182009D14A3 /* song4.mp3 */; };
+		E1522CD02B0C708C009D14A3 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1522CCF2B0C708C009D14A3 /* PlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		E1522CBA2B0C2C1A009D14A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1522CBD2B0C2C1A009D14A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1522CBF2B0C2C1A009D14A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1522CC62B0C3182009D14A3 /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = song1.mp3; path = assets/song1.mp3; sourceTree = SOURCE_ROOT; };
+		E1522CC72B0C3182009D14A3 /* song3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = song3.mp3; path = assets/song3.mp3; sourceTree = SOURCE_ROOT; };
+		E1522CC82B0C3182009D14A3 /* song2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = song2.mp3; path = assets/song2.mp3; sourceTree = SOURCE_ROOT; };
+		E1522CC92B0C3182009D14A3 /* song4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = song4.mp3; path = assets/song4.mp3; sourceTree = SOURCE_ROOT; };
+		E1522CCF2B0C708C009D14A3 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		E1522CB02B0C2C18009D14A3 /* LeakPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				E1522CC52B0C2F7B009D14A3 /* Audio */,
 				E1522CB12B0C2C18009D14A3 /* AppDelegate.swift */,
 				E1522CB32B0C2C18009D14A3 /* SceneDelegate.swift */,
 				E1522CB52B0C2C18009D14A3 /* ViewController.swift */,
@@ -63,8 +74,20 @@
 				E1522CBA2B0C2C1A009D14A3 /* Assets.xcassets */,
 				E1522CBC2B0C2C1A009D14A3 /* LaunchScreen.storyboard */,
 				E1522CBF2B0C2C1A009D14A3 /* Info.plist */,
+				E1522CCF2B0C708C009D14A3 /* PlayerViewController.swift */,
 			);
 			path = LeakPlayer;
+			sourceTree = "<group>";
+		};
+		E1522CC52B0C2F7B009D14A3 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				E1522CC62B0C3182009D14A3 /* song1.mp3 */,
+				E1522CC82B0C3182009D14A3 /* song2.mp3 */,
+				E1522CC72B0C3182009D14A3 /* song3.mp3 */,
+				E1522CC92B0C3182009D14A3 /* song4.mp3 */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +148,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1522CCD2B0C3182009D14A3 /* song4.mp3 in Resources */,
+				E1522CCA2B0C3182009D14A3 /* song1.mp3 in Resources */,
 				E1522CBE2B0C2C1A009D14A3 /* LaunchScreen.storyboard in Resources */,
+				E1522CCC2B0C3182009D14A3 /* song2.mp3 in Resources */,
 				E1522CBB2B0C2C1A009D14A3 /* Assets.xcassets in Resources */,
 				E1522CB92B0C2C18009D14A3 /* Main.storyboard in Resources */,
+				E1522CCB2B0C3182009D14A3 /* song3.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1522CB62B0C2C18009D14A3 /* ViewController.swift in Sources */,
+				E1522CD02B0C708C009D14A3 /* PlayerViewController.swift in Sources */,
 				E1522CB22B0C2C18009D14A3 /* AppDelegate.swift in Sources */,
 				E1522CB42B0C2C18009D14A3 /* SceneDelegate.swift in Sources */,
 			);
@@ -300,6 +328,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +357,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
